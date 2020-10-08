@@ -59,11 +59,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gubaSpider/main.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="216">
               <caret line="8" column="33" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/gubaSpider/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="404">
+              <caret line="130" column="6" selection-start-line="130" selection-start-column="6" selection-end-line="130" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -98,12 +107,13 @@
         <option value="$PROJECT_DIR$/gubaSpider/commands/crawlAll.py" />
         <option value="$PROJECT_DIR$/gubaSpider/commands/__init__.py" />
         <option value="$PROJECT_DIR$/gubaSpider/main.py" />
+        <option value="$PROJECT_DIR$/gubaSpider/.gitignore" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="275" />
-    <option name="y" value="21" />
+    <option name="x" value="717" />
+    <option name="y" value="92" />
     <option name="width" value="2125" />
     <option name="height" value="1250" />
   </component>
@@ -138,6 +148,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -200,15 +211,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1602164617020</updated>
-      <workItem from="1602164618258" duration="820000" />
+      <workItem from="1602164618258" duration="1198000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="820000" />
+    <option name="totallyTimeSpent" value="1198000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="220" y="17" width="1700" height="1000" extended-state="0" />
+    <frame x="574" y="74" width="1700" height="1000" extended-state="0" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25639465" />
@@ -217,11 +228,11 @@
       <window_info anchor="bottom" id="Database Changes" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Python Console" />
-      <window_info anchor="bottom" id="Terminal" weight="0.37744534" />
+      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.37744534" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.5155351" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.5155351" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -281,6 +292,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
           <caret line="8" column="33" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gubaSpider/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="404">
+          <caret line="130" column="6" selection-start-line="130" selection-start-column="6" selection-end-line="130" selection-end-column="6" />
         </state>
       </provider>
     </entry>
