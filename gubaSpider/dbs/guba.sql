@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50731
 File Encoding         : 65001
 
-Date: 2020-10-08 21:38:00
+Date: 2020-10-11 14:59:22
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -20,9 +20,20 @@ SET FOREIGN_KEY_CHECKS=0;
 -- ----------------------------
 DROP TABLE IF EXISTS `author_info`;
 CREATE TABLE `author_info` (
-  `author_url` varchar(255) CHARACTER SET utf8 DEFAULT NULL,
+  `author_url` varchar(255) CHARACTER SET utf8 NOT NULL,
   `following_number` varchar(255) CHARACTER SET utf8 DEFAULT NULL,
-  `follower_number` varchar(255) CHARACTER SET utf8 DEFAULT NULL
+  `follower_number` varchar(255) CHARACTER SET utf8 DEFAULT NULL,
+  PRIMARY KEY (`author_url`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- ----------------------------
+-- Table structure for content_info
+-- ----------------------------
+DROP TABLE IF EXISTS `content_info`;
+CREATE TABLE `content_info` (
+  `title_url` varchar(255) CHARACTER SET utf8 NOT NULL,
+  `content` text CHARACTER SET utf8,
+  PRIMARY KEY (`title_url`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- ----------------------------
@@ -37,16 +48,6 @@ CREATE TABLE `main_info` (
   `author` varchar(255) CHARACTER SET utf8 DEFAULT NULL,
   `author_url` varchar(255) CHARACTER SET utf8 DEFAULT NULL,
   `date` varchar(255) CHARACTER SET utf8 NOT NULL,
-  PRIMARY KEY (`title_url`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
--- ----------------------------
--- Table structure for title_info
--- ----------------------------
-DROP TABLE IF EXISTS `title_info`;
-CREATE TABLE `title_info` (
-  `title_url` varchar(255) CHARACTER SET utf8 NOT NULL,
-  `content` text CHARACTER SET utf8,
   PRIMARY KEY (`title_url`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 SET FOREIGN_KEY_CHECKS=1;

@@ -12,7 +12,23 @@ class GubaSpider(scrapy.Spider):
         # author_url="https://i.eastmoney.com/3006113720930996"
         # yield scrapy.Request(author_url,callback=self.parse_author)
     def parse(self, response):
-        for item in response.xpath('//div[@id="articlelistnew"]/div[@class="articleh "]'):
+
+        for item in response.xpath('//div[@id="articlelistnew"]/div[@class="articleh normal_post"]'):
+            guba=GubaspiderItem()
+            guba['read_number']=item.xpath('span[@class="l1 a1"]/text()').extract_first()
+            guba['command_number']=item.xpath('span[@class="l2 a2"]/text()').extract_first()
+            guba['title']=item.xpath('span[@class="l3 a3"]/a/text()').extract_first()
+            guba['title_url']=self.baseurl+item.xpath('span[@class="l3 a3"]/a/@href').extract_first()
+            guba['author']=item.xpath('span[@class="l4 a4"]/a//text()').extract_first()
+            guba['author_url']=item.xpath('span[@class="l4 a4"]/a/@href').extract_first()
+            if guba['author_url'][0]=='/':
+                guba['author_url']=self.baseurl+guba['author_url']
+            guba['date']=item.xpath('span[@class="l5 a5"]/text()').extract_first()
+            yield scrapy.Request(guba['title_url'],callback=self.parse_content)
+            yield scrapy.Request(guba['author_url'],callback=self.parse_author)
+            yield guba
+
+        for item in response.xpath('//div[@id="articlelistnew"]/div[@class="articleh normal_post odd"]'):
             guba=GubaspiderItem()
             guba['read_number']=item.xpath('span[@class="l1 a1"]/text()').extract_first()
             guba['command_number']=item.xpath('span[@class="l2 a2"]/text()').extract_first()
