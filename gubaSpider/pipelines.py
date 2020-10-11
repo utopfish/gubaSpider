@@ -7,7 +7,7 @@
 # useful for handling different item types with a single interface
 from itemadapter import ItemAdapter
 import pymysql
-from items import GubaspiderItem,ContentspiderItem,AuthorspiderItem
+from gubaSpider.items import GubaspiderItem,ContentspiderItem,AuthorspiderItem
 
 
 class GubaspiderPipeline(object):

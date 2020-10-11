@@ -5,5 +5,5 @@ from scrapy.cmdline import execute
 
 
 if __name__ == '__main__':
-    # execute(['scrapy', 'crawl', 'guba'])
+    #execute(['scrapy', 'crawl', 'guba'])
     execute(['scrapy', 'crawlAll'])
